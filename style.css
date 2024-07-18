@@ -1,0 +1,24 @@
+body {
+  background-image: url("./photo_2024-03-14_10-25-01.jpg");
+}
+
+.img-container, .btn-container, .end-btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  text-decoration: underline;
+}
+
+button.start {
+  letter-spacing: 0.2rem;
+  font-size: xxx-large;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
