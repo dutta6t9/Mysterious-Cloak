@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invisibility Cloak</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='normalize.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <script src="{{ url_for('static', filename='code.js') }}" defer></script>
+  </head>
+  <body>
+    <!-- https://flask.palletsprojects.com/en/3.0.x/quickstart/#static-files -->
+
+    <h1>
+      <strong><em>Invisible Camera</em></strong>
+    </h1>
+    <div class="btn-container">
+      <button class="start">START</button>
+    </div>
+
+    <div class="img-container">
+      <img src="{{ url_for('video_feed') }}" alt="Invisibility Cloak" />
+    </div>
+
+    <div class="end-btn-container">
+      <button class="start">END</button>
+    </div>
+  </body>
+</html>
